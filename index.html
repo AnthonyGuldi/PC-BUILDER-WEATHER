@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Build Recommender</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>PC Build Recommender</h1>
+
+        <div id="budget-selection">
+            <h2>Select your budget:</h2>
+            <button class="budget-btn" data-budget="500">Under $500</button>
+            <button class="budget-btn" data-budget="1000">Under $1000</button>
+            <button class="budget-btn" data-budget="1500">Under $1500</button>
+            <button class="budget-btn" data-budget="2000">Under $2000</button>
+        </div>
+
+        <div id="result" style="display: none;">
+            <h2>Weather at your location:</h2>
+            <div id="weather"></div>
+
+            <h2>Recommended PC Build:</h2>
+            <ul id="pc-parts"></ul>
+
+            <button id="back-btn">Back</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
